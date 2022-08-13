@@ -1,0 +1,251 @@
+*{margin:0;padding:0;box-sizing: border-box;font-family: 'Lato', sans-serif;}
+
+body{
+    background-color: rgb(235, 231, 229);
+    
+}
+nav{
+    height:4.5rem;
+    width: 100%;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top:2vw;
+    border:2px solid black;
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #3a3434 0%, #2e472e 74%);
+}
+nav img{
+    position:relative;
+    top:0.1px;
+}
+ nav li{
+    width:9vw;
+    height:2rem;
+    display:inline-block;
+    margin:0 1vw 0 1vw;
+    text-align: center;
+    position: relative;
+    bottom:25px;
+    color:rgb(219, 218, 218);
+    font-weight: bold;
+    padding:5px;
+    cursor:pointer;
+    transition: 0.5s;
+    border-bottom:1px solid rgba(112, 110, 110, 0.541);
+}
+nav a{
+    color:rgb(219, 218, 218);
+    text-decoration: none;
+}
+ nav li:nth-child(-n+5):hover{
+    border-bottom:none;
+}
+nav li a:hover{
+    color:rgb(209, 248, 177);
+}   
+
+
+li:nth-child(6){
+    background:none;
+    border:transparent;
+    box-shadow:none;
+    backdrop-filter:none;
+}
+input{
+    border-radius: 10px;
+}
+li:nth-child(1){
+    border:none;
+    box-shadow:none;
+    border-radius:0%;
+    backdrop-filter:none;
+    position:relative;
+    right:15vw;
+    background: none;
+}
+li:nth-child(1):hover{
+    background:none;
+    backdrop-filter:none;
+
+}
+li img{
+    position:relative;
+    bottom:10px;
+}
+section{
+    display: flex;
+    height: 1000px;
+    background-image: url(kepek/background26.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.card{
+    height: 700px;
+    width:80%;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    border:1px solid rgb(99, 98, 98);
+}    
+.contact{
+    width:50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.map img{
+    width:100%;
+    height:700px;
+    border-radius: 10px;
+}
+h2{
+    padding:15px;
+    font-size: 3vw;
+    border-bottom: 1px solid rgb(41, 39, 39);
+    font-weight: 600;
+    
+}
+h3{
+    font-size: 2vw;
+    font-weight: 400;
+    color:rgb(46, 46, 46);
+    padding:20px 10px 10px 20px;
+}
+.box1{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+h4{
+    font-size: 3vw;
+    margin-top: 15px;
+    border-bottom:0.5px solid rgb(56, 54, 54);
+}
+.box1 p{
+    line-height: 0.5vw;
+    font-size: 80%;
+}
+input:nth-child(1){
+    width: 80%;
+    height: 100px;;
+    padding:0 20px 0 20px;
+    border-radius: 5px;
+    border:none;
+    border: 1px solid black;
+    line-break: strict;
+}
+footer a:hover{
+    color:rgb(62, 156, 62) !important;
+}
+footer a{
+    text-decoration: none !important ;
+    color:rgb(73, 72, 72) !important;
+    transition:0.5s;
+}
+
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #000000 #ffffff;
+  }
+
+  
+*::-webkit-scrollbar {
+    width: 19px;
+  }
+
+*::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+*::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 0px;
+    border: 3px solid #ffffff;
+  }
+  @media only screen and (max-width:900px)and (min-width:600px) {
+    input:nth-child(2){
+        display: none;
+        width:60%;
+    }
+    nav li{
+        margin:0 2vw 0 2vw;
+    }
+    .card{
+       width:90%;
+    }
+    h2{
+        font-size: 5vw;
+    }
+}
+  @media only screen and (max-width: 600px)and (min-width:0px) {
+    nav{
+        padding-top:20%;
+        height: 140vw; 
+        flex-direction: column;
+        justify-content:center ;
+    }
+    nav li{
+        display: block;
+        font-size:5vw;
+        margin:50px;
+        border-bottom: none;
+        width:35vw;
+    }
+    input:nth-child(2){
+        display: none;
+    }
+    input:nth-child(1){
+        height:70vw;
+        width: 120%;
+    }
+    nav li:first-child{
+        position: static;
+        display: block;
+        width: 35vw;
+        height:30vw;
+        margin:auto;
+    }
+    nav li:hover{
+        
+        background-color: none;
+    }
+    .card{
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+    }
+    section{
+        height: 300vw;
+        padding:10% 0 10% 0;
+    }
+    .contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+        height:200vw;
+    }
+    section img{
+        display:none;
+    }
+    h2{
+        font-size: 15vw;
+    }
+    h3{
+        display:none;
+    }
+}

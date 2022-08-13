@@ -1,0 +1,356 @@
+*{
+    padding: 0%;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background:url(kepek/background27.jpg) ;
+    background-repeat: no-repeat ;
+    background-size: cover; 
+    background-position:top;
+    margin:40px;
+}
+nav{
+    height:4.5rem;
+    width: 100%;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top:2vw;
+    border:2px solid black;
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #3a3434 0%, #2e472e 74%);
+}
+ nav li{
+    width:9vw;
+    height:2rem;
+    display:inline-block;
+    margin:0 1vw 0 1vw;
+    text-align: center;
+    position: relative;
+    bottom:25px;
+    color:rgb(219, 218, 218);
+    font-weight: bold;
+    padding:5px;
+    cursor:pointer;
+    transition: 0.5s;
+    border-bottom:1px solid rgba(112, 110, 110, 0.541);
+}
+nav a{
+    color:rgb(219, 218, 218);
+    text-decoration: none;
+}
+ nav li:nth-child(-n+5):hover{
+    border-bottom:none;
+}
+nav li a:hover{
+    color:rgb(209, 248, 177);
+}   
+
+
+li:nth-child(6){
+    background:none;
+    border:transparent;
+    box-shadow:none;
+    backdrop-filter:none;
+}
+input{
+    border-radius: 10px;
+}
+li:nth-child(1){
+    border:none;
+    box-shadow:none;
+    border-radius:0%;
+    backdrop-filter:none;
+    position:relative;
+    right:15vw;
+    background: none;
+}
+li:nth-child(1):hover{
+    background:none;
+    backdrop-filter:none;
+}
+.lap{
+    width: 100%;
+    height: 45px;
+    background-color: rgb(182, 180, 180);
+    display:flex;
+    justify-content: right;
+    align-items: center;
+    border-bottom:2px solid black;
+}
+
+.lap p{
+    display:inline;
+    padding:0 2% 0 2%;
+    margin:0;
+    width:1%;
+    font-weight: 500;
+}
+.lap p:hover{
+    border-radius:50%;
+    color:white;
+    background:rgb(134, 134, 134);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.lap span{
+    font-weight: 400;
+    color:rgb(37, 37, 37);
+}
+#page{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+#section1{
+    width:20%;
+    height:auto;
+    border-right: 2px solid black;
+    background: #0d310d;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+#section1 h2{
+    color:rgb(243, 240, 240);
+    margin-top:30px;
+    border-bottom: 1px solid white;
+    font-size:2vw;
+    font-weight: bold;
+}
+#section1 input{
+    margin:7px;
+}
+.box1{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box1 div{
+    background: rgb(228, 227, 226);
+    margin:1vw;
+    width:14vw;
+    border-radius:12px;
+    font-size: 1.2vw;;
+    margin-top:70px;
+}
+
+#fajtak{
+    padding:0vw 0.5vw 0.5vw 1.2vw;
+}
+#fajtak li:hover{
+    border-bottom: 1px solid grey;
+}
+.box1 div ul li{
+    list-style-type:circle;
+    cursor:  pointer;
+}
+
+#ar{
+    display:flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: flex-start;
+    padding:1vw;
+}
+ label{
+     position:relative ;
+     left:20px;
+ }
+ #helyszin{
+    display:flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: flex-start;
+    padding:1vw;
+
+}
+#magassag{
+    display:flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: flex-start;
+    padding:1vw;
+}
+
+#szin{
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: flex-start;
+    padding:1vw;
+}
+#section2{
+    width:80%;
+    height:1728px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    padding:4em 5em 4em 5em;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ 
+.fajkepek{
+    width:auto;
+    height:70%;
+    background-color: rgb(255, 255, 255);
+    justify-content: top;
+    align-items: center;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor:pointer;
+}
+
+.fajkepek:hover{
+    height: 320px;
+    transform: translate(0,-10px);
+}
+
+#section2 div img{
+    width:200px;
+    height:200px;
+    border-radius:10px;
+    margin:15px 30px 0 30px;
+    
+}
+#section2 div p {
+    padding:10px;
+    font-weight:bold;
+    font-size: 1.5em;
+    text-align: center;
+}
+#section2 span{
+    opacity:0;
+    transition:0.3s;
+    cursor:pointer;
+    z-index:2;
+    padding:300px 58px 50px 55px;
+    color:rgb(102, 101, 101);
+    font-weight: 300;
+    position:relative;
+    left:10px;
+    height: auto;
+    
+}
+#section2 span:hover{
+    opacity:1;
+    
+}
+footer{
+    background: white;
+}
+footer a{
+    text-decoration: none !important ;
+    color:rgb(73, 72, 72) !important;
+    transition:0.5s;
+}
+
+footer a:hover{
+    color:rgb(62, 156, 62) !important;
+}
+ /* Firefox */
+ * {
+    scrollbar-width: auto;
+    scrollbar-color: #000000 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 19px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 0px;
+    border: 3px solid #ffffff;
+  }
+  @media only screen and (max-width: 1400px)and (min-width:600px) {
+    #section2{
+        grid-template-columns: 1fr 1fr ; 
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        transition:0.3s;
+    }
+    #section2{
+        height:2500px;
+    }
+    #section1{
+        display:none;
+    }
+    input{
+        display: none;
+    }
+    nav li{
+        margin:0 2vw 0 2vw;
+    }
+  }
+@media only screen and (min-width:1400px) {
+
+    .fajkepek:nth-child(12),.fajkepek:nth-child(11),.fajkepek:nth-child(10){
+        height:100%;
+    }
+}
+
+@media only screen and (max-width: 760px)and (min-width:0px) {
+    
+    
+    .lap{
+        justify-content: center;
+        
+    }#section2{
+        display:grid;
+        grid-template-columns: 1fr ; 
+        grid-template-rows: auto;
+        row-gap: 0.1%;
+        height:1300vw;
+        left:0;
+        width: 100%;
+     }.fajkepek{
+         height:65%;
+     }#page{
+        display:inline;
+        width: auto;
+     } nav{
+        padding-top:20%;
+        height: 140vw; 
+        flex-direction: column;
+        justify-content:center ;
+     }
+     nav li{
+         display: block;
+         font-size:5vw;
+         margin:50px;
+         border-bottom: none;
+         width:35vw;
+     }
+     input{
+         display: none;
+     }
+     nav li:first-child{
+         position: static;
+         display: block;
+         width: 35vw;
+         height:30vw;
+         margin:auto;
+     }
+     nav li:hover{
+         
+         background-color: none;
+     }
+     #section1{
+        display:none;
+    }
+}
